@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="bg-gray-950">
+    <main class="main flex text-white">
+      <section class="left bg-black w-1/4 p-1.5">
+        <article class="home bg-gray-800 w-full p-5 rounded-lg">
+          <img class="home-img-w" src="./logo.svg" alt="" class="logo">
+          <section class="home-in">
+            <img src="home.svg" alt="Home button"> 
+            <span><b>Home</b></span>
+          </section>
+          <section class="search-in">
+            <img src="search.svg" alt="Home button"> 
+            <span><b>search</b></span>
+          </section>
+        </article>
+        <article class=" relative library bg-gray-800 mt-1.5 rounded-lg px-2 pt-2 pb-4">
+          <section class=" your-library flex h-5 items-center gap-4 px-4">
+            <img class="invert w-6" src="./library.svg" alt="Library svg">
+            <span class="text-gray-300 font-semibold">Your Library</span>
+            <span class="text-2xl absolute right-4">+</span>
+          </section>
+          <section class="create mt-4">
+            <article class="playlist bg-gray-700 p-4 rounded-lg">
+              <div class="info">
+                <h2 class="font-semibold text-sm">Create your first playlist</h2>
+                <h3 class="text-gray-300 font-semibold text-xs mt-2">It's easy we'll help you</h3>
+              </div>
+              <button class="playlist-btn bg-white text-black text-sm py-1 mt-4 px-4 rounded-full">Create playlist</button>
+            </article>
+            <article class="browse bg-gray-700 p-4 rounded-lg mt-4">
+              <div class="info">
+                <h2 class="font-semibold text-sm">Let's find some podcasts to follow</h2>
+                <h3 class="text-gray-300 font-semibold text-xs mt-2">We will keep you updated on new episodes</h3>
+              </div>
+              <button class="playlist-btn bg-white text-black text-sm py-1 mt-4 px-4 rounded-full">Create playlist</button>
+            </article>
+          </section>
+          <section class="additional-info text-xs flex flex-col gap-4 mt-6">
+            <div class="links-1  flex gap-4">
+              <a href="#">Legal</a>
+              <a href="#">Privacy Center</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cookies</a>
+            </div>
+            <div class="links-2 flex gap-4">
+              <a href="#">About Ads</a>
+              <a href="#">Accessibility</a>
+            </div>
+            <div class="links-3">
+              <a href="#">Cookies</a>
+            </div>
+          </section>
+          <button class="lang border border-gray-200 px-5 py-1 mt-12 rounded-full">English</button>
+        </article>
+      </section>
+      <section class="right bg-green-500 w-9/12"></section>
+    </main>
+    <footer class="p-3 ml-1.5 footer max-w-full footer-linear">
+      <div class="info flex justify-between items-center">
+        <div class="footer-text-wrapper">
+          <h2>Preview of Soptify</h2>
+          <h3>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</h3>
+        </div>
+        <button class="px-5 py-1 mt-12 rounded-full bg-white">Sign up free</button>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
