@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,69 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body class="bg-gray-950">
-    <main class="main flex text-white">
-      <section class="left bg-black w-1/4 p-1.5">
-        <article class="home bg-gray-800 w-full p-5 rounded-lg">
-          <img class="home-img-w" src="./logo.svg" alt="" class="logo">
-          <section class="home-in">
-            <img src="home.svg" alt="Home button"> 
-            <span><b>Home</b></span>
-          </section>
-          <section class="search-in">
-            <img src="search.svg" alt="Home button"> 
-            <span><b>search</b></span>
-          </section>
-        </article>
-        <article class=" relative library bg-gray-800 mt-1.5 rounded-lg px-2 pt-2 pb-4">
-          <section class=" your-library flex h-5 items-center gap-4 px-4">
-            <img class="invert w-6" src="./library.svg" alt="Library svg">
-            <span class="text-gray-300 font-semibold">Your Library</span>
-            <span class="text-2xl absolute right-4">+</span>
-          </section>
-          <section class="create mt-4">
-            <article class="playlist bg-gray-700 p-4 rounded-lg">
-              <div class="info">
-                <h2 class="font-semibold text-sm">Create your first playlist</h2>
-                <h3 class="text-gray-300 font-semibold text-xs mt-2">It's easy we'll help you</h3>
-              </div>
-              <button class="playlist-btn bg-white text-black text-sm py-1 mt-4 px-4 rounded-full">Create playlist</button>
-            </article>
-            <article class="browse bg-gray-700 p-4 rounded-lg mt-4">
-              <div class="info">
-                <h2 class="font-semibold text-sm">Let's find some podcasts to follow</h2>
-                <h3 class="text-gray-300 font-semibold text-xs mt-2">We will keep you updated on new episodes</h3>
-              </div>
-              <button class="playlist-btn bg-white text-black text-sm py-1 mt-4 px-4 rounded-full">Create playlist</button>
-            </article>
-          </section>
-          <section class="additional-info text-xs flex flex-col gap-4 mt-6">
-            <div class="links-1  flex gap-4">
+  <body class="bg-black">
+    <main class="main">
+      <section class="left">
+        <!-- Home container content -->
+        <div class="home">
+          <!-- site logo -->
+          <img src="./logo.svg" alt="site-logo" width="70" />
+          <!-- Home-icon -->
+          <div class="home-icon">
+            <img src="./home.svg" alt="home-icon" width="25" />
+            <p>Home</p>
+          </div>
+          <!-- search-icon -->
+          <div class="search-icon">
+            <img src="./search.svg" alt="search-icon" width="25" />
+            <p>Search</p>
+          </div>
+        </div>
+        <!-- Library container content -->
+        <div class="library">
+          <!-- Your library section -->
+          <div class="your-library">
+            <img src="./library.svg" alt="Library-icon" width="25" />
+            <p>Your Library <span>+</span></p>
+          </div>
+          <!-- Create Playlist container -->
+          <div class="create-playlist create">
+            <h3>Create your first playlist</h3>
+            <h4>It's easy we'll help you</h4>
+            <button>Create Playlist</button>
+          </div>
+          <!-- Browse Podcasts container -->
+          <div class="browse-podcasts create">
+            <h3>Let's find some podcasts to follow</h3>
+            <h4>We'll keep you updated on new episodes</h4>
+            <button>Browe Podcasts</button>
+          </div>
+          <!-- links section -->
+          <div class="links-section">
+            <!-- Row 1 -->
+            <div class="row1">
               <a href="#">Legal</a>
               <a href="#">Privacy Center</a>
               <a href="#">Privacy Policy</a>
               <a href="#">Cookies</a>
             </div>
-            <div class="links-2 flex gap-4">
+            <!-- Row 2 -->
+            <div class="row2">
               <a href="#">About Ads</a>
               <a href="#">Accessibility</a>
             </div>
-            <div class="links-3">
+            <!-- Row 3 -->
+            <div class="row3">
               <a href="#">Cookies</a>
             </div>
-          </section>
-          <button class="lang border border-gray-200 px-5 py-1 mt-12 rounded-full">English</button>
-        </article>
-      </section>
-      <section class="right bg-green-500 w-9/12"></section>
-    </main>
-    <footer class="p-3 ml-1.5 footer max-w-full footer-linear">
-      <div class="info flex justify-between items-center">
-        <div class="footer-text-wrapper">
-          <h2>Preview of Soptify</h2>
-          <h3>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</h3>
+            <!-- Language Buttons -->
+            <div class="button">
+              <button>English</button>
+            </div>
+          </div>
         </div>
-        <button class="px-5 py-1 mt-12 rounded-full bg-white">Sign up free</button>
+      </section>
+      <!-- Right Section start here -->
+      <section class="right">
+        <!-- Navbar section -->
+        <nav class="navbar">
+          <!-- Navbar icons -->
+          <div class="nav-icons">
+            <span class="nav-images">
+              <img src="./left.svg" alt="left arrow" class="left-svg">
+            </span>
+            <span class="nav-images">
+              <img src="./right.svg" alt="right arrow" class="right-svg">
+            </span>
+          </div>
+          <!-- Navbar buttons -->
+          <div class="buttons">
+            <button class="sign-up">Sign up</button>
+            <button class="log-in">Log in</button>
+          </div>
+        </nav>
+        <div class="cardContainer">
+          <div class="card">
+            <div class="card__img">
+              <img src="./thumbnails/thumb1.jpeg" alt="">
+              <img src="./play.svg" alt="" class="play">
+            </div>
+            <h3>Lofi Beats</h3>
+            <p>chill beats, lofi vibes new tracks every song</p>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="./thumbnails/thumb2.jpeg" alt="">
+              <img src="./play.svg" alt="" class="play">
+            </div>
+            <h3>Lofi Beats</h3>
+            <p>chill beats, lofi vibes new tracks every song</p>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="./thumbnails/thumb3.jpeg" alt="">
+              <img src="./play.svg" alt="" class="play">
+            </div>
+            <h3>Lofi Beats</h3>
+            <p>chill beats, lofi vibes new tracks every song</p>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="./thumbnails/thumb4.jpeg" alt="">
+              <img src="./play.svg" alt="" class="play">
+            </div>
+            <h3>Lofi Beats</h3>
+            <p>chill beats, lofi vibes new tracks every song</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer is here -->
+    <footer class="footer">
+      <div class="footer__content">
+        <h4>Preview of Spotify</h4>
+        <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+      </div>
+      <div class="footer__button">
+        <button>sign up free</button>
       </div>
     </footer>
     <script type="module" src="/main.js"></script>
