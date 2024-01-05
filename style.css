@@ -1,8 +1,11 @@
+/* Universal selector  */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* root variables decelations */
 
 :root {
     --bg-main: #000000;
@@ -13,70 +16,106 @@
     --color-gray : rgb(203, 202, 202);
     --nav-bg-color : #101010;
     --card-bg: rgba(11, 11, 11, 0.718);
+    --cardContainer-bg-right : #ffffff10;
 }
+
+
+/* style.css */
+html {
+    scroll-behavior: smooth;
+}
+
+/* body styling */
 
 body {
     background-color: var(--bg-main);
     font-family: var(--family-system-ui);
     margin: 0 auto;
-    max-width: 1800px;
-    max-height: 100vh;
+    max-width: 2200px;
+    /* max-height: 100vh; */
+    height: 100vh;
 }
+
+
 
 ::-webkit-scrollbar {
     display: none;
 }
 
+/* styling the main section */
+
 .main {
     display: flex;
+    gap: 0;
     padding: .4rem 0;
     color: white;
-    overflow: hidden;
     height: 100vh;
 }
+
+/* style for the left section  */
 
 .left {
     width: 25%;
     height: 100%;
-    /* min-height: 88vh;
-    max-height: 100vh; */
     margin: 0 .5rem;
     border-radius: var(--border-rounded);
     max-width: 380px;
     min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
+
+/* inverting the color of images inside of left  */
 
 .left img {
     filter: invert(1);
 }
+
+/* styling the home section inside of left */
 
 .left .home {
    background: var(--bg-content);
    border-radius: var(--border-rounded);
    padding: 1rem;
    position: relative;
+   /* height: 20%; */
 }
+
+/* disabling the hamburger menu */
 
 .home .show {
     display: none;
 }
+
+/* styles for home and search icons */
 
 .home .home-icon, .search-icon {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
+
+/* spacing between icons  */
+
 .home .home-icon {
     margin: 1.5rem 0;
 }
+
+/* library section inside of the left */
 
 .left .library {
     background-color: var(--bg-content);
     margin-top: .5rem;
     border-radius: var(--border-rounded);
     padding: .4rem;
-    /* min-height: 50vh; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+/* styling your library section */
 
 .library .your-library {
     padding: .5rem 1rem 1rem 1rem;
@@ -84,6 +123,9 @@ body {
     align-items: center;
     gap: 1rem;
 }
+
+/* styling your library section p */
+
 .your-library p {
     display: flex;
     width: 100%;
@@ -91,45 +133,22 @@ body {
     align-items: center;
 }
 
+/* styling your library section p span */
+
 .your-library p span {
     font-weight: bold;
     font-size: 1.5rem;
 }
 
-.create-yours {
-    height: 35vh;
-    overflow: scroll;
-    /* max-height: 400px; */
-}
 
-
-.library .create {
-    background-color: var(--bg-content-light-left);
-    padding: 1rem;
-    border-radius: var(--border-rounded);
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    align-items: start;
-    font-size: .9rem;
-}
-.create.create-playlist {
-    margin-bottom: .8rem;
-}
-
-.create button {
-    padding: .5rem 1.2rem;
-    border-radius: 30px;
-    border: none;
-    background-color: #fff;
-    margin-top: .6rem;
-    font-weight: bold;
-}
+/* styling links section */
 
 .links-section {
     margin-left: .5rem;
     margin-top: 1rem;
 }
+
+/* styling a inside of link section */
 
 .links-section a {
     text-decoration: none;
@@ -137,9 +156,14 @@ body {
     font-size: .8rem;
     margin-right: .7rem;
 }
+
+/* spacing b/w links section */
+
 .links-section .row2 {
     margin: .6rem 0;
 }
+
+/* styling language button inside of library */
 
 .links-section .button button {
     margin-top: 1rem;
@@ -151,25 +175,29 @@ body {
     margin-bottom: 1rem;
 }
 
+
+/* right section starts here */
+
 .right {
     width: 75%;
-    height: 100%;
-    /* max-height: 100vh;
-    min-height: 88vh; */
-    background-color: #fff;
-    /* background-color: red; */
+    background-color: var(--cardContainer-bg-right);
     margin-right:.5rem;
     border-radius: var(--border-rounded);
+    overflow: scroll;
 }
+
+/* styling navbar inside of right */
 
 .right .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #101010;
+    background-color: #202020;
     padding: .5rem 1rem;
     border-radius: 8px 8px 0 0;
 }
+
+/* styling navbar navicons inside of right */
 
 .right .navbar .nav-icons {
     display: flex;
@@ -177,6 +205,8 @@ body {
     align-items: center;
     gap: .5rem;
 }
+
+/* giving background color to the icons inside of navbar */
 
 .right .navbar .nav-images {
     background-color: rgba(0, 0, 0, 0.638);
@@ -188,14 +218,21 @@ body {
     border-radius: 50%;
 }
 
+diabling the hamburger menu */
+
 .right .nav-icons .burger {
     display: none;
 }
+
+/* inverting the color of image inside of right */
 
 .right .navbar img {
     filter: invert(1);
     width: 25px;
 }
+
+
+/* styling the buttons inside of navbar */
 
 
 .navbar .buttons {
@@ -221,7 +258,7 @@ body {
     font-family: var(--Roboto);
 } */
 
-
+/* styling card Container inside of right section */
 
 .right .cardContainer {
     width: 100%;
@@ -229,7 +266,10 @@ body {
     gap: 1rem;
     flex-wrap: wrap;
     padding: 2rem;
+    /* overflow: scroll; */
 }
+
+/* styling each card inside of card container */
 
 .cardContainer .card {
     width: 200px;
@@ -239,9 +279,14 @@ body {
     cursor: pointer;
 }
 
+/* hover Effect on cards */
+
 .cardContainer .card:hover {
     background-color: var(--bg-content-light-left);
 }
+
+/* styling images inside of cards */
+
 .card img {
     width: 100%;
     object-fit: contain;
@@ -249,73 +294,34 @@ body {
     margin-bottom: 1.2rem;
 }
 
-.card .card__img {
-    position: relative;
-}
 
-.card .play {
-    /* display: none; */
-    position: absolute;
-    width: 45px;
-    right: 3%;
-    bottom: 5%;
-    transition: transform .3s ease-in-out; 
-    transform: scale(0);
-}
+/* media query starts here (1024) */
 
-.card .play.active {
-    transform: scale(1);
-
-}
-
-
-/* Footer */
-
-.footer {
-    max-width: 1700px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 .5rem;
-    color: white;
-    display: flex;
-    background: linear-gradient(to right, rgba(247, 0, 255, 0.857), rgb(0, 191, 255));
-    padding: .7rem 1.2rem;
-}
-
-.footer__button button {
-    padding: .8rem 1.5rem;
-    background-color: #fff;
-    border: none;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 1024px) {
     .main {
         padding: 0;
     }
     .main .left {
-        display: none;
+       position: absolute;
         /* margin: 0; */
+        left: -120%;
         min-width: 200px;
         margin: 0;
         padding: 0;
     }
     .main .left.active  {
             position: absolute;
-            top: 0;
-            bottom: 0;
             left: 0;
-            right: 0;
             width: 100%;
             max-width: 100vw;
             min-width: 200px;
-            height: 100vh;
             z-index: 3;
             display: block;
             background-color: black;
+        }
+
+        .left .home {
+            /* height: ; */
         }
 
         .home .show {
@@ -333,9 +339,13 @@ body {
         padding: 0;
         margin: 0;
     }
+    /* hidding the right section  */
     .right.unactive {
         display: none;
     }
+
+    /* giving the navbar position fixed */
+
     .right .navbar {
         border-radius: 0;
         position:fixed;
@@ -344,9 +354,11 @@ body {
         right: 0;
         left: 0;
     }
+    /* hidding the navicons */
     .right .navbar .nav-icons .nav-images {
         display: none;
     }
+    /* displaying the hamburger menu */
     .right .nav-icons .burger {
         display: block;
         font-size: 1.5rem;
@@ -354,6 +366,8 @@ body {
         font-weight: bold;
         cursor: pointer;
     }
+     
+    /* margin for cards because of ablsolute of navbar */
 
     .right .cardContainer {
         margin-top: 5rem;
@@ -361,6 +375,8 @@ body {
         justify-content: center;
     }
 }
+
+/* media query starts here (475) */
 
 @media screen and (max-width: 475px) {
     .cardContainer {
@@ -370,4 +386,8 @@ body {
         width: 100%;
         max-width: 300px;
     }
+}
+
+.play {
+    display: none;
 }
