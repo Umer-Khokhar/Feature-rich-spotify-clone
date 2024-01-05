@@ -218,7 +218,7 @@ body {
     border-radius: 50%;
 }
 
-diabling the hamburger menu */
+/* diabling the hamburger menu inside of navbar */
 
 .right .nav-icons .burger {
     display: none;
