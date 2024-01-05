@@ -10,7 +10,7 @@ console.log(leftSide)
 navShow.addEventListener('click', e => {
     leftSide.classList.add('active')
     console.log("clicked")
-    rightSide.classList.add('unactive')
+    // rightSide.classList.add('unactive')
 })
 
 
