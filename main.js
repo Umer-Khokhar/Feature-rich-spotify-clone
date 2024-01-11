@@ -1,7 +1,6 @@
 import './style.css'
 import * as hamburger from './js/hamburder.js'
 import * as myfetch from './js/fetch.js'
-document.addEventListener('click', e => {
     
     hamburger.navShow.addEventListener('click', hamburger.openNav);
     hamburger.show.addEventListener('click', hamburger.closeNav);
@@ -16,5 +15,3 @@ document.addEventListener('click', e => {
     
     myfetch.fetchData('hindi-song')
     myfetch.fetchData('english-song')
-
-})
