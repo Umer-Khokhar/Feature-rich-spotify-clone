@@ -5,13 +5,11 @@ import * as myfetch from './js/fetch.js'
     hamburger.navShow.addEventListener('click', hamburger.openNav);
     hamburger.show.addEventListener('click', hamburger.closeNav);
     
+
+    myfetch.loadData('hindi-song')
+    myfetch.loadData('english-song')
+
+    console.log(myfetch.cardContainer)
+
     
-    async function getData() {
-        let yourData = await myfetch.fetchData();
-        console.log(yourData)
-    }
-    
-    getData();
-    
-    myfetch.fetchData('hindi-song')
-    myfetch.fetchData('english-song')
+      

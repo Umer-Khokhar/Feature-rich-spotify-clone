@@ -150,7 +150,7 @@ body {
 }
 
 .ul li {
-    margin-left: ;
+    /* margin-left: ; */
     border: 1px solid white;
     border-radius: var(--rounded);
     margin: 1rem 0 .5rem .5rem;
